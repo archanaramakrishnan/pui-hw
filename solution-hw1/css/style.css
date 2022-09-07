@@ -1,0 +1,68 @@
+
+
+b {
+    padding-left: 10px;
+    padding-top: 12px;
+    font-size: medium;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+button {
+    background-color: white; 
+    margin-left: 5px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cinnamon-roll {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-box {
+    flex: 1;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+.options-label {
+    justify-content: flex-start;
+    width: auto;
+    font-size: 12px;
+    margin-bottom: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.options {
+    font-size: 12px;
+    display: flex;
+}
+
+.cinnamon-roll {
+    height: 180px;
+    width: 180px;
+}
+
+.size { 
+    height: 30px;
+    width: 30px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.roll-picture {
+    border: 3px solid black;
+}
