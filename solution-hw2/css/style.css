@@ -1,0 +1,94 @@
+b {
+    padding-left: 10px;
+    padding-top: 12px;
+    font-size: medium;
+}
+
+a:hover  {
+    background-color: yellow;
+  }
+
+  button.add-to-cart:hover {
+    background-color: yellow;
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    flex: 30%;
+    padding-left: 10%;
+}
+
+.navbar {
+    flex: 70%;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20%;
+}
+
+
+button {
+    background-color: white; 
+    margin-left: 5px;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.cinnamon-roll {
+    display: flex;
+    flex-direction: column;
+}
+
+.options-box {
+    flex: 1;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-evenly;
+}
+
+.options-label {
+    justify-content: flex-start;
+    width: auto;
+    font-size: 12px;
+    margin-bottom: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.options {
+    font-size: 12px;
+    display: flex;
+}
+
+.cinnamon-roll {
+    height: 180px;
+    width: 180px;
+}
+
+.size { 
+    height: 30px;
+    width: 30px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.roll-picture {
+    border: 3px solid black;
+}

@@ -1,11 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title> Bun Bun Bake Shop </title>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="src/price.js"></script>
+  </head>
+  
+  <header>
+    <img class="logo" src="./assets/logo/logo-01.svg" alt="logo of the bun bun bake shop which is a doodle of a cinammon roll">
+    <div class="navbar">
+      <a class="navbar-products"> PRODUCTS</a>
+      <b> &emsp;&nbsp; CART</b>
+      <hr>
+      <p>Our hand-made cinnamon rolls</p>
+    </div>
+  </header>
   
   <body>
+  <div class="list">
+    <!-- 1 -->
 
-    <h1>I am the solution to HW2!</h1>
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/original-cinnamon-roll.jpg" alt="a plain cinnamon roll">
+      <b> Original cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options" id="glazing-options">
+            <!-- <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option> -->
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">Pack size: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 2.49 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/apple-cinnamon-roll.jpg" alt="an apple cinnamon roll with a fork next to it">
+      <b> Apple cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 3.49 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+    <!-- 3 -->
+
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/raisin-cinnamon-roll.jpg" alt="a raisin cinnamon roll">
+      <b> Raisin cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 2.99 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="list">
+
+    <!-- 4 -->
+
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/walnut-cinnamon-roll.jpg" alt="a walnut cinnamon roll with some whole cinammon and walnuts in a bowl next to it">
+      <b> Walnut cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 3.49 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+    <!-- 5 -->
+
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="a double-chocolate cinnamon roll with some chopped nuts drizzled on top">
+      <b> Double-chocolate cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 3.99 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+
+    <div class="cinnamon-roll">
+      <img class="roll-picture" src="./assets/products/strawberry-cinnamon-roll.jpg" alt="a plain cinnamon roll">
+      <b> Strawberry cinnamon roll </b>
+
+      <div class="options-box">
+          <p class="options-label">Glazing: </p>
+          <select name="Glazing" class="options glazing-options">
+            <option value="keep-original">Keep original</option>
+            <option value="sugar-milk">Sugar milk</option>
+            <option value="vanilla-milk">Vanilla milk</option>
+            <option value="double-chocolate">Double chocolate</option>
+          </select>
+      </div>
+
+      <div class="options-box">
+        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+          <div class="options">
+            <button type="button" class="size"> 1 </button>
+            <button type="button" class="size"> 3 </button>
+            <button type="button" class="size"> 6 </button>
+            <button type="button" class="size"> 12 </button>
+          </div>      
+        </div>
+
+      <div class="options-box">
+        <b>$ 3.99 </b>
+        <button type="button" class="add-to-cart"> Add to cart </button>
+      </div>
+    </div>
+
+  </div>
 
   </body>
 </html>
