@@ -12,21 +12,31 @@ const roll = {
     "Raisin" : 2.99,
     "Walnut" : 3.49,
     "Double-chocolate" : 3.99,
-    "Strawberry" : 3.99,
+    "Strawberry" : 3.99
 };
 
 // type, price, glazing and packSize
 
 
 function populateGlazingOptions() {
-    let glazingDropDown = document.getElementById("glazing-options");
-    
-    for (const glazing in glazingWithPrice)
+    let glazingDropDown = document.getElementsByClassName("glazing-options");
+
+    console.log(glazingDropDown)
+
+    for(const dropDown of glazingDropDown)
     {
-        let option = document.createElement("option");
-        glazingDropDown.add(option);
-        option.text = glazing;
+        console.log(dropDown)
+
+        for (const glazing in glazingWithPrice)
+        {
+            let option = document.createElement("option");
+            dropDown.add(option);
+            option.text = glazing;
+        }
     }
+
+
+    
 }
 
 
