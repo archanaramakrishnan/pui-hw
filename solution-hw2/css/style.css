@@ -1,3 +1,15 @@
+input[type="radio"] {
+    border: 0px;
+    width: 0%;
+    height: 0em;
+    visibility: hidden;
+}
+
+.cinnamon-roll input[type="radio"]:checked + label{
+    background-color: rgba(182, 182, 182, 0.95);
+}
+
+
 b {
     padding-left: 10px;
     padding-top: 12px;
@@ -31,6 +43,11 @@ header {
     text-align: center;
 }
 
+.cart-status {
+    padding-left: 80px;
+    padding-top: 12px;
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -61,8 +78,6 @@ body {
 }
 
 .options-label {
-    justify-content: flex-start;
-    width: auto;
     font-size: 12px;
     margin-bottom: auto;
     padding-left: 10%;
@@ -79,9 +94,20 @@ body {
     width: 180px;
 }
 
+label {
+    height: 25px;
+    width: 32px;
+}
+
 .size { 
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2.5px;
+    font-size: medium;
+    text-align: center;
+    padding: 1px 4px 1px 4px;
 }
 
 img{

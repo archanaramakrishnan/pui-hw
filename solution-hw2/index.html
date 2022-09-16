@@ -25,26 +25,36 @@
       <img class="roll-picture" src="./assets/products/original-cinnamon-roll.jpg" alt="a plain cinnamon roll">
       <b> Original cinnamon roll </b>
 
-      <div class="options-box">
-          <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
-          </select>
-      </div>
-
-      <div class="options-box">
-        <p class="options-label">Pack size: </p>
-          <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
-          </div>      
+      <form id="original">
+        <div class="options-box">
+            <p class="options-label">Glazing: </p>
+            <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
+            </select>
         </div>
 
-      <div class="options-box">
-        <b>$ 2.49 </b>
-        <button type="button" class="add-to-cart"> Add to cart </button>
-      </div>
+        <div class="options-box">
+          <p class="options-label">Pack size:</p>
+            
+            <div class="options">
+              <input type="radio" id="size1-original" class="size" name="original" value="1" checked />
+              <label for="size1-original"><div class="size"> 1 </div></label>
+          
+              <input type="radio" id="size3-original" class="size" name="original" value="3" />
+              <label for="size3-original"><div class="size"> 3 </div></label>
+          
+              <input type="radio" id="size6-original" class="size" name="original" value="6" />
+              <label for="size6-original"><div class="size"> 6 </div></label>
+
+              <input type="radio" id="size12-original" class="size" name="original" value="12" />
+              <label for="size12-original"><div class="size"> 12 </div></label>
+            </div>
+        </div>
+
+        <div class="options-box">
+          <b id="original-price">$ 2.49 </b>
+          <button type="button" class="add-to-cart"> Add to cart </button>
+        </div>
+      </form>
     </div>
 
     <!-- 2 -->
@@ -53,26 +63,36 @@
       <img class="roll-picture" src="./assets/products/apple-cinnamon-roll.jpg" alt="an apple cinnamon roll with a fork next to it">
       <b> Apple cinnamon roll </b>
 
-      <div class="options-box">
-          <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
-          </select>
-      </div>
-
-      <div class="options-box">
-        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
-          <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
-          </div>      
+      <form id="apple">
+        <div class="options-box">
+            <p class="options-label">Glazing: </p>
+            <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
+            </select>
         </div>
 
-      <div class="options-box">
-        <b>$ 3.49 </b>
-        <button type="button" class="add-to-cart"> Add to cart </button>
-      </div>
+        <div class="options-box">
+          <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+            <div class="options">
+              <input type="radio" id="size1-apple" class="size" name="apple" value="1" checked/>
+              <label for="size1-apple"><div class="size"> 1 </div></label>
+          
+              <input type="radio" id="size3-apple" class="size" name="apple" value="3" />
+              <label for="size3-apple"><div class="size"> 3 </div></label>
+          
+              <input type="radio" id="size6-apple" class="size" name="apple" value="6" />
+              <label for="size6-apple"><div class="size"> 6 </div></label>
+
+              <input type="radio" id="size12-apple" class="size" name="apple" value="12" />
+              <label for="size12-apple"><div class="size"> 12 </div></label>
+            </div>     
+          </div>
+
+        <div class="options-box">
+          <b id="apple-price">$ 3.49 </b>
+          <button type="button" class="add-to-cart"> Add to cart </button>
+        </div>
+
+      </form>
     </div>
 
     <!-- 3 -->
@@ -81,26 +101,35 @@
       <img class="roll-picture" src="./assets/products/raisin-cinnamon-roll.jpg" alt="a raisin cinnamon roll">
       <b> Raisin cinnamon roll </b>
 
+    <form id="raisin">
       <div class="options-box">
           <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
+          <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
           </select>
       </div>
 
       <div class="options-box">
         <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
           <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
+            <input type="radio" id="size1-raisin" class="size" name="raisin" value="1" checked/>
+            <label for="size1-raisin"><div class="size"> 1 </div></label>
+        
+            <input type="radio" id="size3-raisin" class="size" name="raisin" value="3" />
+            <label for="size3-raisin"><div class="size"> 3 </div></label>
+        
+            <input type="radio" id="size6-raisin" class="size" name="raisin" value="6" />
+            <label for="size6-raisin"><div class="size"> 6 </div></label>
+
+            <input type="radio" id="size12-raisin" class="size" name="raisin" value="12" />
+            <label for="size12-raisin"><div class="size"> 12 </div></label>
           </div>      
         </div>
 
       <div class="options-box">
-        <b>$ 2.99 </b>
+        <b id="raisin-price">$ 2.99 </b>
         <button type="button" class="add-to-cart"> Add to cart </button>
       </div>
+    </form>
     </div>
 
   </div>
@@ -113,26 +142,35 @@
       <img class="roll-picture" src="./assets/products/walnut-cinnamon-roll.jpg" alt="a walnut cinnamon roll with some whole cinammon and walnuts in a bowl next to it">
       <b> Walnut cinnamon roll </b>
 
-      <div class="options-box">
-          <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
-          </select>
-      </div>
-
-      <div class="options-box">
-        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
-          <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
-          </div>      
+      <form id="walnut">
+        <div class="options-box">
+            <p class="options-label">Glazing: </p>
+            <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
+            </select>
         </div>
 
-      <div class="options-box">
-        <b>$ 3.49 </b>
-        <button type="button" class="add-to-cart"> Add to cart </button>
-      </div>
+        <div class="options-box">
+          <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+            <div class="options">
+              <input type="radio" id="size1-walnut" class="size" name="walnut" value="1" checked/>
+              <label for="size1-walnut"><div class="size"> 1 </div></label>
+          
+              <input type="radio" id="size3-walnut" class="size" name="walnut" value="3" />
+              <label for="size3-walnut"><div class="size"> 3 </div></label>
+          
+              <input type="radio" id="size6-walnut" class="size" name="walnut" value="6" />
+              <label for="size6-walnut"><div class="size"> 6 </div></label>
+
+              <input type="radio" id="size12-walnut" class="size" name="walnut" value="12" />
+              <label for="size12-walnut"><div class="size"> 12 </div></label>
+            </div>       
+          </div>
+
+        <div class="options-box">
+          <b id="walnut-price">$ 3.49 </b>
+          <button type="button" class="add-to-cart"> Add to cart </button>
+        </div>
+      </form>
     </div>
 
     <!-- 5 -->
@@ -141,26 +179,35 @@
       <img class="roll-picture" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="a double-chocolate cinnamon roll with some chopped nuts drizzled on top">
       <b> Double-chocolate cinnamon roll </b>
 
-      <div class="options-box">
-          <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
-          </select>
-      </div>
-
-      <div class="options-box">
-        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
-          <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
-          </div>      
+      <form id="chocolate">
+        <div class="options-box">
+            <p class="options-label">Glazing: </p>
+            <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
+            </select>
         </div>
 
-      <div class="options-box">
-        <b>$ 3.99 </b>
-        <button type="button" class="add-to-cart"> Add to cart </button>
-      </div>
+        <div class="options-box">
+          <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+            <div class="options">
+              <input type="radio" id="size1-chocolate" class="size" name="chocolate" value="1" checked/>
+              <label for="size1-chocolate"><div class="size"> 1 </div></label>
+          
+              <input type="radio" id="size3-chocolate" class="size" name="chocolate" value="3" />
+              <label for="size3-chocolate"><div class="size"> 3 </div></label>
+          
+              <input type="radio" id="size6-chocolate" class="size" name="chocolate" value="6" />
+              <label for="size6-chocolate"><div class="size"> 6 </div></label>
+
+              <input type="radio" id="size12-chocolate" class="size" name="chocolate" value="12" />
+              <label for="size12-chocolate"><div class="size"> 12 </div></label>
+            </div>       
+          </div>
+
+        <div class="options-box">
+          <b id="chocolate-price">$ 3.99 </b>
+          <button type="button" class="add-to-cart"> Add to cart </button>
+        </div>
+      </form>
     </div>
 
     <!-- 6 -->
@@ -169,29 +216,39 @@
       <img class="roll-picture" src="./assets/products/strawberry-cinnamon-roll.jpg" alt="a plain cinnamon roll">
       <b> Strawberry cinnamon roll </b>
 
-      <div class="options-box">
-          <p class="options-label">Glazing: </p>
-          <select name="Glazing" class="options glazing-options">
-          </select>
-      </div>
-
-      <div class="options-box">
-        <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
-          <div class="options">
-            <button type="button" class="size"> 1 </button>
-            <button type="button" class="size"> 3 </button>
-            <button type="button" class="size"> 6 </button>
-            <button type="button" class="size"> 12 </button>
-          </div>      
+      <form id="strawberry">
+        <div class="options-box">
+            <p class="options-label">Glazing: </p>
+            <select name="Glazing" class="options glazing-options" onchange="glazingChange(this)">
+            </select>
         </div>
 
-      <div class="options-box">
-        <b>$ 3.99 </b>
-        <button type="button" class="add-to-cart"> Add to cart </button>
-      </div>
+        <div class="options-box">
+          <p class="options-label">&nbsp&nbsp&nbspPack &nbsp&nbsp&nbspsize: </p>
+            <div class="options">
+              <input type="radio" id="size1-strawberry" class="size" name="strawberry" value="1" checked/>
+              <label for="size1-strawberry"><div class="size"> 1 </div></label>
+          
+              <input type="radio" id="size3-strawberry" class="size" name="strawberry" value="3" />
+              <label for="size3-strawberry"><div class="size"> 3 </div></label>
+          
+              <input type="radio" id="size6-strawberry" class="size" name="strawberry" value="6" />
+              <label for="size6-strawberry"><div class="size"> 6 </div></label>
+
+              <input type="radio" id="size12-strawberry" class="size" name="strawberry" value="12" />
+              <label for="size12-strawberry"><div class="size"> 12 </div></label>
+            </div>   
+          </div>
+
+        <div class="options-box">
+          <b id="strawberry-price">$ 3.99 </b>
+          <button type="button" class="add-to-cart"> Add to cart </button>
+        </div>
+      </form>
+
     </div>
 
   </div>
-
+  `
   </body>
 </html>
