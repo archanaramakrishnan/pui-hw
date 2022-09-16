@@ -14,7 +14,7 @@ const rollPriceList = {
     "strawberry" : 3.99
 };
 
-let cart = [];
+let cart = new Array();
 
 
 class Roll {
@@ -30,7 +30,6 @@ class Roll {
         this.packSize = size;
         //recalculate price 
         this.price = this.calculatePrice(this.type, this.glazing, this.packSize);
-        console.log(this.price)
     }
 
     getPrice() {
@@ -38,8 +37,6 @@ class Roll {
     }
 
     calculatePrice(type, glazing, packSize) {
-        console.log("type", type)
-        console.log("glazing", glazing)
         let rollPrice = rollPriceList[type];
         let glazePrice = glazingPriceList[glazing];
         
@@ -48,10 +45,6 @@ class Roll {
             packPrice = 5;
         else if(packPrice === 12)
             packPrice = 10;
-    
-        console.log("calculating")
-        console.log(rollPrice, glazePrice, packPrice);
-        console.log((rollPrice + glazePrice) * packPrice);
         return (rollPrice + glazePrice) * packPrice;
     }
 }
@@ -73,6 +66,7 @@ populateGlazingOptions();
 
 function glazingChange(glazing) {
     const rollType = glazing.parentNode.parentNode.id;
+    
     let size = 1;
     const roll = new Roll(rollType, glazing.value, size);
 
@@ -92,27 +86,17 @@ function glazingChange(glazing) {
                 size = 12;
                 break;
         }
-        console.log(size);
-        console.log("ROLLTYPE", rollType)
-        console.log("GLAZING", glazing.value)
         roll.setPackSize(size);
-        console.log(roll)
-        cart = cart + roll;
-        console.log("PRICE", roll.getPrice())
-
         const priceTag = document.getElementById(`${rollType}-price`);
         const roundedPrice = Number(roll.getPrice()).toFixed(2);
         priceTag.innerHTML = `$${roundedPrice}`;
-        console.log(priceTag.innerHTML)
+        
     });
 
     const addToCartButton = document.getElementById(`add-${rollType}`);
-        console.log(addToCartButton);
-        addToCartButton.addEventListener("click", addToCart(roll));
+    addToCartButton.addEventListener("click", addToCart);
 }
 
 function addToCart(roll) {
     cart = cart + roll;
-    console.log("added to cart!")
-    console.log(cart.size)
 }
